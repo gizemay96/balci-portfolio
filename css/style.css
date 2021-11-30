@@ -8774,8 +8774,8 @@ h1, h2, h3, h4, h5,
         border-color: #f3c623; }
         .portfolio-wrap .img .icon:hover span {
           color: #f3c623; }
-    .portfolio-wrap .img:hover .icon {
-      opacity: 1; }
+    /* .portfolio-wrap .img:hover .icon {
+      opacity: 1; } */
   .portfolio-wrap .text {
     position: relative; }
     .portfolio-wrap .text .subheading {
@@ -9066,10 +9066,10 @@ textarea.form-control {
 .bg-primary {
   background: #f3c623 !important; }
 
-.image-popup {
+/* .image-popup {
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
-  cursor: zoom-in; }
+  cursor: zoom-in; } */
 
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
