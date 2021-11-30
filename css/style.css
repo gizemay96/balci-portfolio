@@ -9322,3 +9322,11 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+    .offcanvas{
+	    visibility: inherit !important;
+	    background-color: #111111 !important;
+      position: static !important;
+      display: block !important;
+}

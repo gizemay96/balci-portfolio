@@ -2,6 +2,7 @@
 const anchors = ['#home-section-link', '#about-section-link' , '#contact-link']
 
 function getConsole(e) {
+   console.log(e)
      setTimeout(() => {
           const hash = window.location.hash;
           const formattedHash = `${hash}-link`;
