@@ -61,6 +61,7 @@ main,
 nav,
 section {
   display: block;
+  margin-bottom: 30vh;
 }
 
 body {
@@ -11327,10 +11328,9 @@ h5,
   text-align: center;
 }
 .ftco-about .team-wrap .team .img {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   margin: 0 auto;
-  border-radius: 50%;
   margin-bottom: 10px;
 }
 .ftco-about .team-wrap .team h3 {
@@ -11393,6 +11393,7 @@ h5,
   -webkit-filter: brightness(60%) saturate(30%);
   -moz-filter: brightness(60%) saturate(30%);
   position: relative;
+  background-size: 110%;
 }
 .portfolio-wrap .img .icon {
   margin-top: 20px;
