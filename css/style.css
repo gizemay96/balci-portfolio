@@ -11328,8 +11328,8 @@ h5,
   text-align: center;
 }
 .ftco-about .team-wrap .team .img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -11847,9 +11847,11 @@ textarea.form-control {
 .info-wrap .dbox p span {
   font-weight: 500;
   color: #000000;
+  word-break: break-word;
 }
 .info-wrap .dbox p a {
   color: #000000;
+  word-break: break-word;
 }
 .info-wrap .dbox .icon {
   width: 50px;
