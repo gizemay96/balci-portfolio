@@ -61,8 +61,17 @@ main,
 nav,
 section {
   display: block;
-  margin-bottom: 30vh;
+
 }
+
+.mt-25vh{
+  margin-top: 25vh;
+}
+
+.mt-30vh{
+  margin-top: 30vh;
+}
+
 
 body {
   margin: 0;
