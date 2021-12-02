@@ -64,6 +64,8 @@ section {
 
 }
 
+
+
 .mt-25vh{
   margin-top: 25vh;
 }
@@ -10999,6 +11001,7 @@ h5,
   font-size: 60px;
   line-height: 0.8;
   font-family: "Abril Fatface", cursive;
+  filter: grayscale(1);
 }
 @media (max-width: 1199.98px) {
   #colorlib-aside #colorlib-logo {
