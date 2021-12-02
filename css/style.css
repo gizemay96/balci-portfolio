@@ -12130,3 +12130,13 @@ textarea.form-control {
 ::-webkit-scrollbar-thumb:hover {
   background: #f3c623; 
 }
+
+.toast{
+  z-index: 9999999999999;
+  position: fixed;
+  width: 300px;
+}
+
+.toast-header{
+  background: #f3c623;
+}

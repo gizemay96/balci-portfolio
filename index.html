@@ -24,7 +24,20 @@
 </head>
 
 <body>
-
+	<div class="toast-case d-flex w-100 justify-content-center">
+		<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<i class="fas fa-check-circle mr-2"></i>
+				<strong class="me-auto">Info</strong>
+				<small class="text-muted">2 seconds ago</small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				Email sent successfully !
+			</div>
+		</div>
+	</div>
+	</div>
 	<div id="colorlib-page">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 		<aside id="colorlib-aside" role="complementary" class="js-fullheight">
@@ -323,6 +336,9 @@
 												<label class="label" for="name">Full Name</label>
 												<input type="text" class="form-control" name="name" id="name"
 													placeholder="Name">
+												<div class="invalid-feedback" id="inv-name" style="display: none;">
+													This field is required.
+												</div>
 											</div>
 										</div>
 										<div class="col-md-6">
@@ -330,6 +346,9 @@
 												<label class="label" for="email">Email Address</label>
 												<input type="email" class="form-control" name="email" id="email"
 													placeholder="Email">
+												<div class="invalid-feedback" id="inv-mail" style="display: none;">
+													Please enter valid email.
+												</div>
 											</div>
 										</div>
 										<div class="col-md-12">
@@ -344,12 +363,24 @@
 												<label class="label" for="#">Message</label>
 												<textarea name="message" class="form-control" id="message" cols="30"
 													rows="4" placeholder="Message"></textarea>
+												<div class="invalid-feedback" id="inv-message" style="display: none;">
+													This field is required.
+												</div>
 											</div>
 										</div>
 										<div class="col-md-12">
 											<div class="form-group">
-												<input onclick="setEmail()" value="Send Message" class="btn btn-primary">
-												<div class="submitting"></div>
+												<button id="submit" onclick="setEmail()" class="btn btn-primary"
+													style="width: 143px;">
+													Send Message</button>
+												<button id="submitting"
+													class="btn btn-primary d-flex align-items-center"
+													style="width: 143px; opacity: 0;">
+													<div class="spinner-border mr-2" role="status">
+														<span class="visually-hidden">Loading...</span>
+													</div>
+													Sending...
+												</button>
 											</div>
 										</div>
 									</div>
@@ -404,7 +435,6 @@
 				</div>
 			</section>
 
-
 		</div><!-- END COLORLIB-MAIN -->
 	</div><!-- END COLORLIB-PAGE -->
 
@@ -432,14 +462,13 @@
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
 
-	<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_XbJ3yQEb6ktUVOmMfylcG");
-   })();
-</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("user_XbJ3yQEb6ktUVOmMfylcG");
+		})();
+	</script>
 
 
 </body>
@@ -450,5 +479,6 @@
 	integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
 	crossorigin="anonymous"></script>
 <script type="text/javascript" src="./index.js"></script>
+<script src="https://kit.fontawesome.com/cdae9555a5.js" crossorigin="anonymous"></script>
 
 </html>
