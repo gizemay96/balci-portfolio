@@ -1,5 +1,5 @@
 
-const anchors = ['#home-section-link', '#about-section-link' , '#contact-link']
+const anchors = ['#home-section-link', '#about-section-link' , '#contact-link'];
 
 function getSection(e) {
    console.log(e)
@@ -14,4 +14,23 @@ function getSection(e) {
                }
           });
      }, 100);
+}
+
+
+const inputs = document.querySelector('form');
+function setEmail(){
+     var templateParams = {
+          from_name: inputs.elements['name'].value,
+          to_name: 'Eda Balcı',
+          subject_info: inputs.elements['subject'].value,
+          email: inputs.elements['email'].value,
+          message: inputs.elements['message'].value
+      };
+
+      emailjs.send('gmail', 'template_iz81l8p', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
 }
