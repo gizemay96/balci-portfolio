@@ -1,6 +1,6 @@
 
-const anchors = ['#home-section-link', '#about-section-link', '#contact-section-link'];
-const sections = ['#home-section', '#about-section', '#contact-section'];
+const anchors = ['#home-section-link', '#graphic-design-section-link', '#about-section-link', '#contact-section-link'];
+const sections = ['#home-section','#graphic-design-section' , '#about-section', '#contact-section'];
 const formValues = ['name', 'subject', 'email', 'message'];
 
 
