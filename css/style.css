@@ -12382,13 +12382,17 @@ a:hover {
 
 
 @media (max-width: 767px) {
+  .slider h2 {
+    padding: 0 !important;
+    margin-bottom: 45vh !important;
+  }
   .checkbox.scnd + label{
     margin-top: 0;
   }
   .slider-height-padding {
     padding-top: 340px;
   }
-  ul li {
+  .slider ul li {
     height: 300px !important;
     font-size: 13px !important;
     letter-spacing: 1px !important;
@@ -12399,10 +12403,14 @@ a:hover {
 }
 
 @media (max-width: 575px) {
+  .slider h2 {
+    padding: 0 !important;
+    margin-bottom: 45vh !important;
+  }
   .slider-height-padding {
     padding-top: 240px;
   }
-  ul li {
+  .slider ul li {
     height: 200px !important;
   }
 }
