@@ -12235,7 +12235,7 @@ a:hover {
     animation-play-state: paused;
 }
 .checkbox.scnd + label{
-  margin-top: 20vh;
+  margin-top: 13vh;
   background-image: url('../images/graphic/min/pandacoffee-min.png');
 }
 .checkbox.thrd + label{
@@ -12410,7 +12410,7 @@ a:hover {
 
 .slide-btn{
   border: 1px solid;
-  background: black;
+  background: black !important;
   font-size: 13px;
   border-radius: 10px;
   padding: 6px;
@@ -12421,6 +12421,10 @@ a:hover {
     font-family: "Abril Fatface", cursive;
     line-height: 1.2;
     font-weight: 900;
-    color: #f3c623;
+    color: #f3c623 !important;
     letter-spacing: 4px;
+}
+
+.slide-case{
+  margin-top: -40vh;
 }
